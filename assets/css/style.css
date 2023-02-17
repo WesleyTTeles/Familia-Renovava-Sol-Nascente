@@ -1,0 +1,680 @@
+:root{
+    --primary-color: #CCA35C;
+    --second-color: #151c27;
+    --third-color: #FFFFFF;
+    --text-color: #57596A;
+    --background-color: #F5F5F5;
+    --background--color-menu: #3D3E3D;
+    --background--color-footer: #2A2937;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Conteudo inicial */
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    background-image: url('/assets/images/background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.conteiner header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    height: auto;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    padding:0 10px;
+    font-size: 1.3rem;
+    color: var(--third-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+li a:hover{
+    color: var(--third-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+.row-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.row-title h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+.row-title i{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--primary-color);
+}
+.row-title span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--third-color);
+}
+/* Conteudo inicial */
+
+/* Cards dos Cultos */
+.row-cultos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.left-rectangle{
+    width: 80%;
+    height: 250px;
+    background-color: var(--second-color);
+}
+.right-rectangle{
+    width: 20%;
+    height: 250px;
+    background-color: var(--background-color-card);
+}
+.row-card-culto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    max-width: 1380px;
+    height: auto;
+    bottom: 50px;
+}
+.card-culto{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    height: 349px;
+    margin: 0 20px;
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+.card-title span{
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: var(--third-color);
+}
+.card-title a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: var(--third-color);
+}
+i {
+    margin-left: 10px;
+}
+/* Cards dos Cultos */
+
+/* Cards Proximos Eventos */
+.row-events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-color);
+    width: 100%;
+}
+.events-title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    color: var(--primary-color);
+    margin: 40px 0;
+}
+.events-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    border: solid 1px var(--primary-color);
+    border-radius: 10px;
+}
+.img-events{
+    width: 50%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info-events{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+}
+.info-events h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.info-events span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--text-color);
+}
+hr{
+    margin-top: 5px;
+    width: 70px;
+    border-radius: 10px;
+    border: solid 3px var(--primary-color);
+}
+.info-events p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    color: var(--text-color);
+    margin-top: 20px;
+    width: 90%;
+}
+#button-events{
+    display: flex;
+    justify-content: center;
+}
+#button-events a{
+    align-content: baseline;
+    width: 200px;
+}
+#button-events-2{
+    width: 300px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: var(--primary-color);
+}
+/* Cards Proximos Eventos */
+
+/* Banner Contibua */
+.row-offer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: var(--primary-color);
+}
+.row-offer h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.7rem;
+    color: var(--third-color);
+    text-transform: uppercase;
+}
+.row-offer button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    font-weight:bold;
+    color: var(--third-color);
+    cursor: pointer;
+    width: 300px;
+    height: 60px;
+    border: solid 1px var(--third-color);
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+.row-offer button:hover{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+.popup{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0 , 0.7);
+    transition-delay: 0.3s ease-in-out;
+}
+.info-offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    border: solid 5px var(--primary-color);
+    background-color: var(--background-color-card);
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 8px 0 0;
+    cursor: pointer;
+}
+.close i:hover{
+    color: var(--primary-color);
+}
+.card-offer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+}
+.card-offer h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: justify;
+    color: var(--text-color);
+    margin: 30px 0;
+}
+.card-offer b{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.card-offer p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--text-color);
+}
+.button-offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    margin-top: 25px;
+}
+.button-offer span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--third-color);
+    width: 70%;
+}
+.button-offer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--third-color);
+    cursor: pointer;
+    height: 100%;
+    width: 45%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: var(--background--color-footer);
+}
+.warning{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: green;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#button-send-folder a {
+    width: 350px;
+}
+.button-offer button:hover{
+    color: var(--text-color);
+    background-color: var(--third-color);
+}
+/* Banner Contibua */
+
+/* Cards Nossos Cursos */
+.row-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--background-color);
+}
+.course-title{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+    margin: 30px 0;
+}
+.course-title i{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin: 0;
+}
+.course-title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;    
+    color: var(--primary-color);
+}
+
+.row-course-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1390px;
+    height: auto;  
+}
+.cool-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    width: 400px;
+    height: auto;
+    background-color: var(--third-color);
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+.course-card-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.course-card-title h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.course-card-title span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.row-detail-course{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 20px 0;
+    margin-right: -60px;
+}
+.details-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.details-course i{
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.subtitle-course{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+.cool-card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    width: 89%;
+    color: var(--text-color);
+}
+.cool-card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 30px 0;
+    width: 200px;
+    height: 30px;
+    background-color: var(--primary-color);
+}
+.cool-card button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--third-color);
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+}
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 40px 0;
+    width: 400px;
+    height: 35px;
+    background-color: var(--primary-color);
+}
+.button button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    color: var(--third-color);
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+}
+.fa-arrow-right{
+    margin-left: 20px;
+}
+/* Cards Nossos Cursos */
+
+/* Rodapé */
+
+.row-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: var(--background--color-footer);
+}
+.coopyright h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--third-color);
+}
+.icon-footer a{
+    text-decoration: none;
+    color: var(--third-color);
+    margin-right: 10px;
+}
+/* Rodapé */
+
+
+
+
+
+
+
+
+
+
+
+
+/* >>>>>>> Responsividade <<<<<<<< */
+/*
+.menu {
+    margin-left: 120px;
+}
+.one,
+.two,
+.three {
+    width: 100%;
+    height: 3px;
+    margin: 7px auto;
+    background-color: #fff;
+    transition-duration: 0.3s;
+}
+.menu-toggle {
+    width: 40px;
+    height: 30px;
+}
+.menu.on{
+    position: absolute;
+    background-color:#08A6AC;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    margin: 0;
+}
+.menu.on nav {
+    display: block;
+}
+.menu.on .menu-toggle {
+    position: absolute;
+    right: 94px;
+    top: 82px;
+}
+.menu.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+.menu.on .menu-toggle .two {
+   opacity: 0;
+}
+.menu.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+.menu.on nav ul {
+    text-align: center;
+    display: block;
+}
+.menu.on nav ul a {
+    text-align: center;
+    display: block;
+    transition-duration: 0.3s;
+    color: #fff;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+*/
+

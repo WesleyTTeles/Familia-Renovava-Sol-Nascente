@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/curso_signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/327102260c.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Uma Família para Ser e Pertencer">
+    <title>Familia Renovada Sol Nascente</title>
+</head>
+<body>
+    <!-- Conteudo inicial -->
+    <main>
+        <div class="conteiner">
+            <header>
+                <div class="header">
+                    <div class="logo">
+                        <img src="/assets/images/logo.svg" alt="Logo da Familia Renovada" width="108" height="80">
+                    </div>
+                    <div class="menu">
+                        <div class="menu-toggle">
+                            <div class="one"></div>
+                            <div class="two"></div>
+                            <div class="three"></div>
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="/index.html" onclick="closeMenu()">Inicio</a></li>
+                                <li><a href="/assets/routes/eventos.html" onclick="closeMenu()">Eventos</a></li>
+                                <li><a href="/assets/routes/cursos.html" onclick="closeMenu()">Cursos</a></li>
+                                <li><a href="/assets/routes/renocrianca.html" onclick="closeMenu()">Reno Criança</a></li>
+                                <li><a href="/assets/routes/familia_em_acao.html" onclick="closeMenu()">Família em Ação</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </main>
+    <!-- Conteudo inicial -->
+
+    <div class="row-signin-events">
+        <div class="cool-events-left">
+            <div class="signin-events-img">
+                <img src="/assets/images/course-3.svg" width="600px" height="auto" alt="Imagem do Evento">
+            </div>
+            <div class="signin-course-info">
+                <h1>Consagração de Bebês</h1>
+                <h2>Para Membros</h2>
+                <div class="row-detail-course">
+                    <div class="card-course">
+                        <div class="details-course">
+                            <i class="fa-solid fa-calendar-check fa-2xl"></i>
+                            <div class="subtitle-course">
+                                <span>Encontros</span>
+                                <b>4 Encontros</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-course">
+                        <div class="details-course">
+                            <i class="fa-solid fa-clock fa-2xl"></i>
+                            <div class="subtitle-course">
+                                <span>Duração</span>
+                                <b>6 horas</b>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Muitos acham a tarefa de criar filhos muito difícil, complicada e às vezes indesejada. Se faz o que se tem de fazer. Será isto verdade? Na verdade, criar filhos depende muito mais da paciência, dedicação e descomplicação dos próprios pais, quando estes têm uma vida emocional saudável.
+                    <br><br>
+                    Este curso será fundamental na caminhada dos pais que estarão consagrando seu bebê, ajudando-os a perceberem e a desenvolverem a forma bíblica de instrução e criação dos filhos.
+                </p>
+            </div>
+        </div>
+        <div class="cool-events-right">
+            <div class="row-title">
+                <h2>Inscreva-se</h2>
+                <span>Preencha seus Dados Corretamente</span>
+            </div>
+            <div class="forms">
+                <form action="" method="post">
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                    <input type="number" name="fone" placeholder="Telefone" required>
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="datetime" name="data_nascimento" placeholder="Data de Nascimento" required>
+                    <select name="estadocivil" id="estadocivil">
+                        <option value="0">Estado Civil</option>
+                        <option value="1">Solteiro(a)</option>
+                        <option value="2">Casado(a)</option>
+                        <option value="3">Viuvo(a)</option>
+                        <option value="4">Divorciado(a)</option>
+                    </select>
+                    <select name="turma" id="turma">
+                        <option value="0">Escolha sua Turma</option>
+                        <option value="1">Quinta-Feira às 20hrs</option>
+                        <option value="2">Sábado às 20hrs</option>
+                    </select>
+                    <input id="button-signin" type="button" value="Inscrever">
+                </form>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="row-footer">
+            <div class="logo-footer">
+                <img src="/assets/images/logo.svg" width="100px" height="80px" alt="logo da Familia Renovada SN">
+            </div>
+            <div class="coopyright">
+                <h2>© Copyright 2022 - Todos os direitos reservados</h2>
+            </div>
+            <div class="icon-footer">
+                <a href="https://www.instagram.com/familiarenovadasolnascente" target="_blank">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                </a>
+                <a href="https://www.facebook.com/igrejapresbiterianarenovadadosolnascente" target="_blank">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@iprsolnascente" target="_blank">
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Rodapé -->
+</body>
+<script src="/assets/js/main.js"></script>
+</html>
