@@ -338,7 +338,7 @@ hr{
     height: auto;
     border-radius: 10px;
     border: solid 5px var(--primary-color);
-    background-color: var(--background-color-card);
+    background-color: var(--third-color);
 }
 .close{
     position: absolute;
