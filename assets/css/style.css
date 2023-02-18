@@ -137,8 +137,8 @@ li a:hover{
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    width: 300px;
-    height: 349px;
+    width: 295px;
+    height: 370px;
     margin: 0 20px;
     background-color: var(--primary-color);
     background-size: cover;
