@@ -1,0 +1,194 @@
+:root{
+    --primary-color: #CCA35C;
+    --second-color: #151C27;
+    --third-color: #FFFFFF;
+    --text-color: #57596A;
+    --background-color: #F5F5F5;
+    --background-color-card: #F0EFEA;
+    --background--color-input: #d9d9d9;
+    --background--color-menu: #3D3E3D;
+    --background--color-footer: #2A2937;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Conteudo inicial */
+.conteiner{
+    width: 100vw;
+    height: auto;
+    background-color: var(--background--color-menu);
+}
+.conteiner header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1180px;
+    height: auto;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+li {
+    list-style: none;
+}
+ul li a {
+    text-decoration: none;
+    padding:0 10px;
+    font-size: 1.3rem;
+    color: var(--third-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+li a:hover{
+    color: var(--third-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+/* Conteudo inicial */
+
+
+/* Conteudo dos Cards */
+.row-action-event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: var(--background-color);
+}
+.title h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 30px 0;
+}
+.row-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 370px;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: var(--third-color);
+}
+.left-side-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100%;
+}
+.img-card{
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: tan;
+}
+.right-side-card{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 45%;
+    height: auto;
+}
+.right-side-card h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.right-side-card span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--text-color);
+}
+.right-side-card p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 20px 0;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+.button button {
+    font-size: 1.1rem;
+    color: var(--third-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.button button i{
+    margin-left: 20px;
+}
+
+/* Conteudo dos Cards */
+
+/* Rodapé */
+
+.row-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    background-color: var(--background--color-footer);
+}
+.coopyright h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: var(--third-color);
+}
+.icon-footer a{
+    text-decoration: none;
+    color: var(--third-color);
+    margin-right: 10px;
+}
+/* Rodapé */
