@@ -1,17 +1,33 @@
-// Funcao para fazer o efeito digitando
-let i = 0;
-const message = "Família Renovada Sol Nascente";
-const text = document.getElementById("text");
-let intervalId;
+// Menu responsivo
+const menu = document.querySelector('.menu');
+const menuToggle = document.querySelector('.menu-toggle');
+const body = document.querySelector('body');
 
-intervalId = setInterval(() => {
-if (i < message.length) {
-    text.innerHTML += message[i];
-    i++;
-} else {
-    clearInterval(intervalId);
+menuToggle.addEventListener('click', () => {
+  const isMenuVisible = menu.classList.contains('on');
+  body.style.overflow = isMenuVisible ? 'initial' : 'hidden';
+  menu.classList.toggle('on');
+});
+
+function closeMenu() {
+  body.style.overflow = 'initial';
+  menu.classList.remove('on');
 }
-}, 100);
+
+// Funcao para fazer o efeito digitando
+// let i = 0;
+// const message = "Família Renovada Sol Nascente";
+// const text = document.getElementById("text");
+// let intervalId;
+
+// intervalId = setInterval(() => {
+// if (i < message.length) {
+//     text.innerHTML += message[i];
+//     i++;
+// } else {
+//     clearInterval(intervalId);
+// }
+// }, 100);
 
 // Funcao para o slidershow
 var slideIndex = 1;
@@ -60,21 +76,3 @@ function copiarTexto() {
   });
 }
 document.getElementById("button-copy").addEventListener("click", copiarTexto);
-
-
-// Menu responsivo
-const menu = document.querySelector('.menu');
-const menuToggle = document.querySelector('.menu-toggle');
-const body = document.querySelector('body');
-
-menuToggle.addEventListener('click', () => {
-  const isMenuVisible = menu.classList.contains('on');
-  body.style.overflow = isMenuVisible ? 'initial' : 'hidden';
-  menu.classList.toggle('on');
-});
-
-function closeMenu() {
-  body.style.overflow = 'initial';
-  menu.classList.remove('on');
-}
-

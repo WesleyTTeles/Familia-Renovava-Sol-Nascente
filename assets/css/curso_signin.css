@@ -75,7 +75,7 @@ li a:hover{
 
 .row-signin-events{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
@@ -86,7 +86,7 @@ li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 41%;
+    width: 40%;
     height: auto;
 }
 .signin-events-img{
@@ -193,6 +193,7 @@ li a:hover{
 }
 .forms form{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
 }
@@ -264,60 +265,132 @@ input:focus{
 /* Rodapé */
 
 /* >>>>>>> Responsividade <<<<<<<< */
-/*
-.menu {
-    margin-left: 120px;
-}
-.one,
-.two,
-.three {
-    width: 100%;
-    height: 3px;
-    margin: 7px auto;
-    background-color: #fff;
-    transition-duration: 0.3s;
-}
-.menu-toggle {
-    width: 40px;
-    height: 30px;
-}
-.menu.on{
-    position: absolute;
-    background-color:#08A6AC;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-    top: 0;
-    margin: 0;
-}
-.menu.on nav {
-    display: block;
-}
-.menu.on .menu-toggle {
-    position: absolute;
-    right: 94px;
-    top: 82px;
-}
-.menu.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-}
-.menu.on .menu-toggle .two {
-   opacity: 0;
-}
-.menu.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(6px, -7px);
-}
-.menu.on nav ul {
-    text-align: center;
-    display: block;
-}
-.menu.on nav ul a {
-    text-align: center;
-    display: block;
-    transition-duration: 0.3s;
-    color: #fff;
-    font-size: 1.3rem;
-    line-height: 2;
-}
-*/
 
+@media screen and (max-width:1024px){
+    .row-signin-events{
+        flex-direction: column;
+    }
+    .cool-events-right{
+        align-self: center;
+    }
+    .signin-course-info{
+        width: 230%
+    }
+    .signin-events-img,
+    .cool-events-right{
+        width: auto;
+    }
+    .forms form{
+        align-items: center;
+    }
+    .forms form input{
+        width: 400px;
+    }
+    .forms select{
+        width: 420px;
+    }
+
+}
+@media screen and (max-width:730px) {
+    .header{
+        padding: 20px 55px;
+    }
+    .row-title{
+        top: 40%;
+        left: 53%;
+    }
+    nav{
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 3px;
+        margin: 7px auto;
+        background-color: var(--third-color);
+        transition-duration: 0.3s;
+    }
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+    .menu.on{
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .menu.on nav {
+        display: block;
+    }
+    .menu.on .menu-toggle {
+        position: absolute;
+        right: 55px;
+        top: 58px;
+    }
+    .menu.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu.on .menu-toggle .two {
+       opacity: 0;
+    }
+    .menu.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(6px, -7px);
+    }
+    .menu.on nav ul {
+        text-align: center;
+        display: block;
+    }
+    .menu.on nav ul a {
+        text-align: center;
+        display: block;
+        transition-duration: 0.3s;
+        color: var(--third-color);
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .signin-events-img img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:640px) {
+    .signin-events-img img{
+        width: 400px;
+    }
+    .row-footer{
+        flex-direction: column;
+    }
+    .coopyright h2{
+        margin: 20px 0;
+    }
+    .icon-footer{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width:430px) {
+    .signin-events-img img{
+        width: 350px;
+    }
+    .forms form input{
+        width: 340px;
+    }
+    .forms select{
+        width: 360px;
+    }
+}
+@media screen and (max-width:370px) {
+    .signin-events-img img{
+        width: 300px;
+    }
+    .forms form input{
+        width: 300px;
+    }
+    .forms select{
+        width: 320px;
+    }
+}
