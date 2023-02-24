@@ -56,7 +56,7 @@ function showSlides(n) {
 }
 setInterval(function() {
   plusSlides(1);
-}, 3000);
+}, 4000);
 
 // Funcao para abrir e fechar o popup do botao de oferta
 document.querySelector('#buttonOffer').addEventListener('click', ()=> {
