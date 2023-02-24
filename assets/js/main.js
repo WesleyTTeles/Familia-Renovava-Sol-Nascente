@@ -14,22 +14,22 @@ function closeMenu() {
   menu.classList.remove('on');
 }
 
-// Funcao para fazer o efeito digitando
-// let i = 0;
-// const message = "Família Renovada Sol Nascente";
-// const text = document.getElementById("text");
-// let intervalId;
-
-// intervalId = setInterval(() => {
-// if (i < message.length) {
-//     text.innerHTML += message[i];
-//     i++;
-// } else {
-//     clearInterval(intervalId);
-// }
-// }, 100);
+//Funcao para fazer o efeito digitando
+let i = 0;
+const message = "Família Renovada Sol Nascente";
+const text = document.getElementById("text");
+let intervalId;
+intervalId = setInterval(() => {
+if (i < message.length) {
+    text.innerHTML += message[i];
+    i++;
+} else {
+    clearInterval(intervalId);
+}
+}, 100);
 
 // Funcao para o slidershow
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -76,3 +76,4 @@ function copiarTexto() {
   });
 }
 document.getElementById("button-copy").addEventListener("click", copiarTexto);
+

@@ -265,7 +265,6 @@ input:focus{
 /* Rodapé */
 
 /* >>>>>>> Responsividade <<<<<<<< */
-
 @media screen and (max-width:1024px){
     .row-signin-events{
         flex-direction: column;
