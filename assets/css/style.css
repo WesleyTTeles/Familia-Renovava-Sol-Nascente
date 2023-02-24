@@ -807,18 +807,24 @@ hr{
     }
     .row-detail-course{
         margin-right: 0;
-
     }
 }
-@media screen and (max-width:414px){
+@media screen and (max-width:450px){
     .row-title{
         left: 50%;
         top: 33%;
         width: 305px;
     }
     .left-rectangle{
-        height: 800px;
+        height: 500px;
         width: 100%;
+    }
+    .card-culto{
+        height: 200px;
+        width: 80%;
+    }
+    .cool-card{
+        width: 350px;
     }
 }
 
