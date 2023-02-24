@@ -75,7 +75,7 @@ li a:hover{
 
 .row-signin-events{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
@@ -86,7 +86,7 @@ li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 41%;
+    width: 40%;
     height: auto;
 }
 .signin-events-img{
@@ -97,31 +97,62 @@ li a:hover{
     height: auto;
     margin: 50px 0 30px 0 ;
 }
-.signin-events-info{
+.signin-course-info{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
-.signin-events-info h1{
+.signin-course-info h1{
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--primary-color);
 }
-.signin-events-info h2{
+.signin-course-info h2{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--text-color);
 }
-.signin-events-info p{
+.signin-course-info p{
     font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     text-align: justify;
     margin: 30px 0 50px 0;
+    color: var(--text-color);
+}
+.row-detail-course{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.card-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.details-course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-course i{
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+.subtitle-course{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
     color: var(--text-color);
 }
 .cool-events-right{
@@ -162,19 +193,30 @@ li a:hover{
 }
 .forms form{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
 }
 .forms form input {
-    font-size: 1rem;
-    font-family: 'Roboto',sans-serif;
-    color: var(--text-color);
-    height: 40px;
     margin: 10px 0;
     padding-left: 20px;
+    height: 40px;
     border: none;
     border-radius: 10px;
     background-color: var(--background--color-input);
+    font-size: 1rem;
+    font-family: 'Roboto',sans-serif;
+    color: var(--text-color);
+}
+.forms select{
+    font-size: 0.9rem;
+    margin: 10px 0;
+    padding: 0 20px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--background--color-input);
+    color: var(--text-color);
 }
 #button-signin{
     width: 200px;
@@ -191,11 +233,12 @@ li a:hover{
 }
 ::placeholder{
     font-size: 0.9rem;
+    color: var(--text-color);
 }
 input:focus{
     outline-color: var(--primary-color);
+    padding-left: 20px;
 }
-
 /* Campo de se inscrever */
 
 /* Rodapé */
@@ -222,60 +265,132 @@ input:focus{
 /* Rodapé */
 
 /* >>>>>>> Responsividade <<<<<<<< */
-/*
-.menu {
-    margin-left: 120px;
-}
-.one,
-.two,
-.three {
-    width: 100%;
-    height: 3px;
-    margin: 7px auto;
-    background-color: #fff;
-    transition-duration: 0.3s;
-}
-.menu-toggle {
-    width: 40px;
-    height: 30px;
-}
-.menu.on{
-    position: absolute;
-    background-color:#08A6AC;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-    top: 0;
-    margin: 0;
-}
-.menu.on nav {
-    display: block;
-}
-.menu.on .menu-toggle {
-    position: absolute;
-    right: 94px;
-    top: 82px;
-}
-.menu.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-}
-.menu.on .menu-toggle .two {
-   opacity: 0;
-}
-.menu.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(6px, -7px);
-}
-.menu.on nav ul {
-    text-align: center;
-    display: block;
-}
-.menu.on nav ul a {
-    text-align: center;
-    display: block;
-    transition-duration: 0.3s;
-    color: #fff;
-    font-size: 1.3rem;
-    line-height: 2;
-}
-*/
 
+@media screen and (max-width:1024px){
+    .row-signin-events{
+        flex-direction: column;
+    }
+    .cool-events-right{
+        align-self: center;
+    }
+    .signin-course-info{
+        width: 230%
+    }
+    .signin-events-img,
+    .cool-events-right{
+        width: auto;
+    }
+    .forms form{
+        align-items: center;
+    }
+    .forms form input{
+        width: 400px;
+    }
+    .forms select{
+        width: 420px;
+    }
+
+}
+@media screen and (max-width:730px) {
+    .header{
+        padding: 20px 55px;
+    }
+    .row-title{
+        top: 40%;
+        left: 53%;
+    }
+    nav{
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 3px;
+        margin: 7px auto;
+        background-color: var(--third-color);
+        transition-duration: 0.3s;
+    }
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+    .menu.on{
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .menu.on nav {
+        display: block;
+    }
+    .menu.on .menu-toggle {
+        position: absolute;
+        right: 55px;
+        top: 58px;
+    }
+    .menu.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu.on .menu-toggle .two {
+       opacity: 0;
+    }
+    .menu.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(6px, -7px);
+    }
+    .menu.on nav ul {
+        text-align: center;
+        display: block;
+    }
+    .menu.on nav ul a {
+        text-align: center;
+        display: block;
+        transition-duration: 0.3s;
+        color: var(--third-color);
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .signin-events-img img{
+        width: 500px;
+    }
+}
+@media screen and (max-width:640px) {
+    .signin-events-img img{
+        width: 400px;
+    }
+    .row-footer{
+        flex-direction: column;
+    }
+    .coopyright h2{
+        margin: 20px 0;
+    }
+    .icon-footer{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width:430px) {
+    .signin-events-img img{
+        width: 350px;
+    }
+    .forms form input{
+        width: 340px;
+    }
+    .forms select{
+        width: 360px;
+    }
+}
+@media screen and (max-width:370px) {
+    .signin-events-img img{
+        width: 300px;
+    }
+    .forms form input{
+        width: 300px;
+    }
+    .forms select{
+        width: 320px;
+    }
+}
