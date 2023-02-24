@@ -364,7 +364,7 @@ hr{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 40%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
     border: solid 5px var(--primary-color);
@@ -808,6 +808,17 @@ hr{
     .row-detail-course{
         margin-right: 0;
 
+    }
+}
+@media screen and (max-width:414px){
+    .row-title{
+        left: 50%;
+        top: 30%;
+        width: 305px;
+    }
+    .left-rectangle{
+        height: 800px;
+        width: 100%;
     }
 }
 
