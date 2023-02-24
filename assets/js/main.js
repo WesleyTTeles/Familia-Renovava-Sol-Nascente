@@ -62,5 +62,19 @@ function copiarTexto() {
 document.getElementById("button-copy").addEventListener("click", copiarTexto);
 
 
-// Galeria de Fotos
+// Menu responsivo
+const menu = document.querySelector('.menu');
+const menuToggle = document.querySelector('.menu-toggle');
+const body = document.querySelector('body');
+
+menuToggle.addEventListener('click', () => {
+  const isMenuVisible = menu.classList.contains('on');
+  body.style.overflow = isMenuVisible ? 'initial' : 'hidden';
+  menu.classList.toggle('on');
+});
+
+function closeMenu() {
+  body.style.overflow = 'initial';
+  menu.classList.remove('on');
+}
 

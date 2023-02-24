@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+.menu-responsive {
+    overflow: hidden;
+    }
 /* Conteudo inicial */
 .conteiner{
     width: 100vw;
@@ -34,7 +37,7 @@
     width: 100%;
     max-width: 1180px;
     height: auto;
-    padding: 10px 10px;
+    padding: 20px 20px;
     margin-top: 10px;
 }
 .menu {
@@ -76,8 +79,8 @@ li a:hover{
     flex-direction: column;
     align-items: center;
     position: absolute;
-    width: 100%;
     height: auto;
+    width: 830px;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -118,7 +121,7 @@ li a:hover{
 }
 .right-rectangle{
     width: 20%;
-    height: 250px;
+    height: auto;
     background-color: var(--background-color-card);
 }
 .row-card-culto{
@@ -138,17 +141,20 @@ li a:hover{
     flex-direction: column;
     border-radius: 10px;
     width: 295px;
-    height: 370px;
+    height: 368px;
     margin: 0 20px;
     background-color: var(--primary-color);
+    border: none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 .card-title {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     margin: 15px 0;
 }
 .card-title span{
@@ -243,30 +249,40 @@ hr{
     align-content: baseline;
     width: 200px;
 }
-#button-events-2{
-    width: 300px;
-}
 .slideshow-container {
-    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1020px;
     position: relative;
     margin: auto;
+    padding: 0 20px;
 }
-.prev, .next {
+/* .prev{
     cursor: pointer;
     position: absolute;
     top: 50%;
+    left: 0;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -10px;
     color: var(--primary-color);
     font-weight: bold;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
 .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
     right: 0;
-    border-radius: 3px 0 0 3px;
-}
+    width: auto;
+    margin-top: -10px;
+    margin-right: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+} */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -285,19 +301,32 @@ hr{
 /* Banner Contibua */
 .row-offer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
     width: 100%;
-    height: 150px;
+    height: auto;
     background-color: var(--primary-color);
 }
-.row-offer h2{
+.offer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 5px;
+}
+.offer-title h2{
     font-family: 'Raleway', sans-serif;
     font-size: 1.7rem;
+    text-align: center;
     color: var(--third-color);
     text-transform: uppercase;
+    width: 100%;
+    margin: 20px 10px;
 }
-.row-offer button{
+.offer-title button{
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
     font-weight:bold;
@@ -443,8 +472,8 @@ hr{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 100%;
-    max-width: 1300px;
+    width: 90%;
+    /* max-width: 1300px; */
     margin: 30px 0;
 }
 .course-title i{
@@ -477,6 +506,7 @@ hr{
     position: relative;
     width: 400px;
     height: auto;
+    margin: 10px 10px;
     background-color: var(--third-color);
 }
 .card-image{
@@ -609,72 +639,171 @@ hr{
 }
 /* Rodapé */
 
-
-
-
-
-
-
-
-
-
-
-
 /* >>>>>>> Responsividade <<<<<<<< */
-/*
-.menu {
-    margin-left: 120px;
+@media screen and (max-width:1024px) {
+    .card-culto {
+        margin: 0 10px;
+        height: 320px;
+    }
 }
-.one,
-.two,
-.three {
-    width: 100%;
-    height: 3px;
-    margin: 7px auto;
-    background-color: #fff;
-    transition-duration: 0.3s;
+@media screen and (max-width:833px) {
+    .row-title{
+        top: 50%;
+        left: 50%;
+        width: 560px;
+    }
+    .card-culto {
+        height: 280px;
+    }
+    .offer-title h2{
+        font-size: 1.5rem;
+    }
+    .offer-title button{
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .course-title{
+        text-align: center;
+    }
 }
-.menu-toggle {
-    width: 40px;
-    height: 30px;
+@media screen and (max-width:730px) {
+    .header{
+        padding: 20px 55px;
+    }
+    .row-title{
+        top: 40%;
+        left: 53%;
+    }
+    nav{
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 3px;
+        margin: 7px auto;
+        background-color: var(--third-color);
+        transition-duration: 0.3s;
+    }
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+    .menu.on{
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 100vw;
+        height: 100vh;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .menu.on nav {
+        display: block;
+    }
+    .menu.on .menu-toggle {
+        position: absolute;
+        right: 55px;
+        top: 58px;
+    }
+    .menu.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+    .menu.on .menu-toggle .two {
+       opacity: 0;
+    }
+    .menu.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(6px, -7px);
+    }
+    .menu.on nav ul {
+        text-align: center;
+        display: block;
+    }
+    .menu.on nav ul a {
+        text-align: center;
+        display: block;
+        transition-duration: 0.3s;
+        color: var(--third-color);
+        font-size: 1.4rem;
+        line-height: 2;
+    }
+    .row-card-culto{
+        flex-wrap: wrap;
+    }
+    .right-rectangle{
+        display: none;
+    }
+    .left-rectangle{
+        height: 1000px;
+        width: 100%;
+    }
+    .card-culto{
+        width: 90%;
+        margin: 10px 0;
+    }
 }
-.menu.on{
-    position: absolute;
-    background-color:#08A6AC;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10;
-    top: 0;
-    margin: 0;
+@media screen and (max-width:650px){
+    .row-title{
+        text-align: center;
+        top: 40%;
+        left: 51%;
+        width: 420px;
+    }
+    .row-title i{
+        font-size: 1.5;
+    }
+    .row-title h1{
+        font-size: 2.7rem;
+    }
+    .events-card{
+        flex-direction: column;
+    }
+    .img-events {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .img-events hr{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-events{
+        text-align: center;
+        width: 100%;
+    }
+    .row-footer{
+        flex-direction: column;
+    }
+    .coopyright h2{
+        margin: 20px 0;
+    }
+    .icon-footer{
+        margin: 10px 0;
+    }
 }
-.menu.on nav {
-    display: block;
+@media screen and (max-width:500px){
+    .row-title{
+        left: 52%;
+        width: 310px;
+    }
+    .row-title i{
+        font-size: 1.3rem;
+    }
+    .row-title h1{
+        font-size: 2rem;
+    }
+    .row-title span{
+        font-size: 1rem;
+    }
+    .button a{
+        width: 300px;
+    }
+    .row-detail-course{
+        margin-right: 0;
+
+    }
 }
-.menu.on .menu-toggle {
-    position: absolute;
-    right: 94px;
-    top: 82px;
-}
-.menu.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-}
-.menu.on .menu-toggle .two {
-   opacity: 0;
-}
-.menu.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(6px, -7px);
-}
-.menu.on nav ul {
-    text-align: center;
-    display: block;
-}
-.menu.on nav ul a {
-    text-align: center;
-    display: block;
-    transition-duration: 0.3s;
-    color: #fff;
-    font-size: 1.3rem;
-    line-height: 2;
-}
-*/
+
 
