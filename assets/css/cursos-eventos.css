@@ -209,10 +209,26 @@ li a:hover{
     padding: 10px 0;
     background-color: var(--background--color-footer);
 }
+.coopyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .coopyright h2{
-    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: var(--third-color);
+    font-weight: 400;
+}
+.coopyright span{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: var(--third-color);
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 .icon-footer a{
     text-decoration: none;

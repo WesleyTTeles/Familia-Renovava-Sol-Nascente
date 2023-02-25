@@ -12,68 +12,102 @@ menuToggle.addEventListener('click', () => {
 function closeMenu() {
   body.style.overflow = 'initial';
   menu.classList.remove('on');
-}
+};
 
 //Funcao para fazer o efeito digitando
-let i = 0;
+
 const message = "Família Renovada Sol Nascente";
 const text = document.getElementById("text");
-let intervalId;
-intervalId = setInterval(() => {
-if (i < message.length) {
-    text.innerHTML += message[i];
-    i++;
-} else {
-    clearInterval(intervalId);
+
+if (text) {
+  let i = 0;
+  let intervalId = setInterval(() => {
+    if (i < message.length) {
+      text.innerHTML += message[i];
+      i++;
+    } else {
+      clearInterval(intervalId);
+    }
+  }, 100);
 }
-}, 100);
 
 // Funcao para o slidershow
 
 var slideIndex = 1;
-showSlides(slideIndex);
+const slides = document.getElementsByClassName("events-card");
+const dots = document.getElementsByClassName("dot");
+
+if (slides.length > 0 && dots.length > 0) {
+  showSlides(slideIndex);
+
+  setInterval(function() {
+    plusSlides(1);
+  }, 4000);
+};
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  if (slides.length > 0 && dots.length > 0) {
+    showSlides(slideIndex += n);
+  }
+};
+
 function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  if (slides.length > 0 && dots.length > 0) {
+    showSlides(slideIndex = n);
+  }
+};
 function showSlides(n) {
-  let i;
-  const slides = document.getElementsByClassName("events-card");
-  const dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  if (slides.length > 0 && dots.length > 0) {
+    let i;
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "flex";
+    dots[slideIndex - 1].className += " active";
   }
-  slides[slideIndex-1].style.display = "flex";
-  dots[slideIndex-1].className += " active";
 }
-setInterval(function() {
-  plusSlides(1);
-}, 4000);
 
 // Funcao para abrir e fechar o popup do botao de oferta
-document.querySelector('#buttonOffer').addEventListener('click', ()=> {
-  document.querySelector('.popup').style.display = 'flex';
-});
+const buttonOffer = document.querySelector('#buttonoffer');
+if (buttonOffer) {
+  buttonOffer.addEventListener('click', ()=> {
+    const popup = document.querySelector('.popup');
+    if (popup) {
+      popup.style.display = 'flex';
+    }
+  });
+};
 
-document.querySelector('#close').addEventListener('click', ()=> {
-  document.querySelector('.popup').style.display = 'none';
-});
+// Verifica se o botão de fechar a popup existe antes de adicionar o event listener
+const closeButton = document.querySelector('#close');
+if (closeButton) {
+  closeButton.addEventListener('click', ()=> {
+    const popup = document.querySelector('.popup');
+    if (popup) {
+      popup.style.display = 'none';
+    }
+  });
+};
 
 // Funcao para copiar a chave pix
-function copiarTexto() {
-  const warning = document.querySelector('.warning');
-  const texto = document.getElementById("key").innerText;
-  navigator.clipboard.writeText(texto).then(function() {
-    warning.innerText = 'Chave Copiada com Sucesso!';
-  });
-}
-document.getElementById("button-copy").addEventListener("click", copiarTexto);
+const buttonCopy = document.querySelector('#button-copy');
 
+if(buttonCopy){
+  buttonCopy.addEventListener('click', ()=> {
+    const warning = document.querySelector('.warning');
+    const texto = document.getElementById("key").innerText;
+    navigator.clipboard.writeText(texto).then(function() {
+      warning.innerText = 'Chave Copiada com Sucesso!';
+    });
+  });
+
+}
