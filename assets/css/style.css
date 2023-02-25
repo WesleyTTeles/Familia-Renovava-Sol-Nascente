@@ -813,7 +813,7 @@ hr{
 }
 @media screen and (max-width:500px){
     .row-title{
-        left: 52%;
+        left: 40%;
         width: 310px;
     }
     .row-title i{
@@ -823,7 +823,7 @@ hr{
         font-size: 2rem;
     }
     .row-title span{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .button a{
         width: 300px;
@@ -874,12 +874,52 @@ hr{
     } */
     /* AJUSTES DE TESTE SO APAGAR DEPOIS */
      .left-rectangle{
-        height: 100px;
+        height: 80px;
         width: 100%;
     }
      .row-title{
         left: 50%;
         top: 35%;
+        width: 400px;
+    }
+    .row-title i{
+        font-size: 1.3rem;
+    }
+    .row-title h1{
+        font-size: 2.5rem;
+    }
+    .row-title span{
+        font-size: 1.7rem;
+    }
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+}
+@media screen and (max-width:375px){
+    /* .left-rectangle{
+        height: 170px;
+        width: 100%;
+    } */
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+     .left-rectangle{
+        height: 170px;
+        width: 100%;
+    }
+ 
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+}
+@media screen and (max-width:320px){
+    /* .left-rectangle{
+        height: 170px;
+        width: 100%;
+    } */
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+     .left-rectangle{
+        height: 300px;
+    }
+    .row-title{
+        left: 50%;
+        top: 40%;
         width: 305px;
     }
     /* AJUSTES DE TESTE SO APAGAR DEPOIS */
