@@ -19,7 +19,7 @@
     width: 100vw;
     height: 100vh;
     background-color: #3F403F;
-    background-image: url('/assets/images/background-1.svg');
+    background-image: url('/assets/images/background.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -689,10 +689,6 @@ hr{
     .header{
         padding: 20px 55px;
     }
-    /* .row-title{
-        top: 40%;
-        left: 53%;
-    } */
     nav{
         display: none;
     }
@@ -754,6 +750,11 @@ hr{
     .right-rectangle{
         display: none;
     }
+     /* .row-title{
+        top: 40%;
+        left: 53%;
+    } */
+
     /* .left-rectangle{
         height: 1000px;
         width: 100%;
@@ -765,12 +766,13 @@ hr{
     .offer-title{
         flex-direction: column;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
      .left-rectangle{
         height: 500px;
         width: 100%;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 }
 @media screen and (max-width:650px){
     /* .row-title{
@@ -779,10 +781,13 @@ hr{
         left: 51%;
         width: 420px;
     } */
+    
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title{
         text-align: center;
         width: 420px;
     }
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title i{
         font-size: 1.5;
     }
@@ -819,9 +824,12 @@ hr{
         left: 40%;
         width: 310px;
     } */
+
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title{
         width: 310px;
     }
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title i{
         font-size: 1.3rem;
     }
@@ -855,7 +863,8 @@ hr{
     .cool-card{
         width: 350px;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
      .left-rectangle{
         height: 250px;
         width: 100%;
@@ -863,7 +872,7 @@ hr{
      .row-title{
         width: 305px;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 
 }
 @media screen and (max-width:414px){
@@ -876,7 +885,8 @@ hr{
         height: 500px;
         width: 100%;
     } */
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
      .left-rectangle{
         height: 80px;
         width: 100%;
@@ -884,7 +894,7 @@ hr{
      .row-title{
         width: 350px;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 
 }
 @media screen and (max-width:390px){
@@ -892,7 +902,7 @@ hr{
         height: 170px;
         width: 100%;
     } */
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .left-rectangle{
         height: 80px;
         width: 100%;
@@ -900,7 +910,7 @@ hr{
      .row-title{
         width: 320px;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 
 }
 @media screen and (max-width:375px){
@@ -908,26 +918,27 @@ hr{
         height: 170px;
         width: 100%;
     } */
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
      .left-rectangle{
         height: 170px;
         width: 100%;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 }
 @media screen and (max-width:320px){
     /* .left-rectangle{
         height: 170px;
         width: 100%;
     } */
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
      .left-rectangle{
         height: 300px;
     }
     .row-title{
         width: 305px;
     }
-    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 
 }
 
