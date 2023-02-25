@@ -753,10 +753,10 @@ hr{
     .right-rectangle{
         display: none;
     }
-    .left-rectangle{
+    /* .left-rectangle{
         height: 1000px;
         width: 100%;
-    }
+    } */
     .card-culto{
         width: 90%;
         margin: 10px 0;
@@ -764,6 +764,12 @@ hr{
     .offer-title{
         flex-direction: column;
     }
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+     .left-rectangle{
+        height: 500px;
+        width: 100%;
+    }
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
 }
 @media screen and (max-width:650px){
     .row-title{
@@ -827,15 +833,15 @@ hr{
     }
 }
 @media screen and (max-width:450px){
-    .row-title{
+    /* .row-title{
         left: 50%;
         top: 33%;
         width: 305px;
-    }
-    .left-rectangle{
+    } */
+    /* .left-rectangle{
         height: 500px;
         width: 100%;
-    }
+    } */
     .card-culto{
         height: 200px;
         width: 80%;
@@ -843,6 +849,41 @@ hr{
     .cool-card{
         width: 350px;
     }
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+     .left-rectangle{
+        height: 250px;
+        width: 100%;
+    }
+     .row-title{
+        left: 50%;
+        top: 40%;
+        width: 305px;
+    }
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
+}
+@media screen and (max-width:414px){
+    /* .row-title{
+        left: 50%;
+        top: 33%;
+        width: 305px;
+    } */
+    /* .left-rectangle{
+        height: 500px;
+        width: 100%;
+    } */
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+     .left-rectangle{
+        height: 100px;
+        width: 100%;
+    }
+     .row-title{
+        left: 50%;
+        top: 35%;
+        width: 305px;
+    }
+    /* AJUSTES DE TESTE SO APAGAR DEPOIS */
+
 }
 
 
