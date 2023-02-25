@@ -207,7 +207,6 @@ li a:hover{
     font-size: 0.9rem;
     color: var(--third-color);
     font-weight: 400;
-    margin-bottom: 20px;
 }
 .icon-footer a{
     text-decoration: none;
