@@ -151,8 +151,11 @@ li a:hover{
     justify-content: center;
     flex-direction: column;
     width: 100%;
+}
+.subtitle-course span{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--text-color);
 }
 .cool-events-right{

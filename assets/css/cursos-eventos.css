@@ -144,30 +144,26 @@ li a:hover{
 }
 .row-detail-course{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
-}
-.details-course{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.details-course i{
-    margin-right: 10px;
-    color: var(--primary-color);
 }
 .subtitle-course{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
-    margin-right: -30px;
+    justify-content: space-around;
+    align-items: center;
+}
+.subtitle-course i{
+    color: var(--primary-color);
+}
+.subtitle-course span{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    font-weight: 600;
     color: var(--text-color);
+    margin-left: 10px;
 }
 .cool-card p {
     font-family: 'Raleway', sans-serif;

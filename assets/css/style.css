@@ -477,8 +477,11 @@ hr{
     justify-content: center;
     flex-direction: column;
     width: 100%;
+}
+.subtitle-course span{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
+    font-weight: 500;
     color: var(--text-color);
 }
 .cool-card p {
@@ -515,7 +518,7 @@ hr{
     border-radius: 10px;
     margin: 20px 0;
     width: 400px;
-    height: 40px;
+    height: px;
     background-color: var(--primary-color);
 }
 .button button {
