@@ -108,75 +108,6 @@ li a:hover{
 }
 /* Conteudo inicial */
 
-/* Cards dos Cultos */
-.row-cultos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.left-rectangle{
-    width: 80%;
-    height: 250px;
-    background-color: var(--second-color);
-}
-.right-rectangle{
-    width: 20%;
-    height: auto;
-    background-color: var(--background-color-card);
-}
-.row-card-culto{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    max-width: 1380px;
-    height: auto;
-    bottom: 50px;
-}
-.card-culto{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 295px;
-    height: 368px;
-    margin: 0 20px;
-    background-color: var(--primary-color);
-    border: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-.card-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 15px 0;
-}
-.card-title span{
-    font-size: 1.3rem;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    color: var(--third-color);
-}
-.card-title a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    color: var(--third-color);
-}
-i {
-    margin-left: 10px;
-}
-/* Cards dos Cultos */
-
 /* Cards Proximos Eventos */
 .row-events{
     display: flex;
@@ -259,31 +190,6 @@ hr{
     margin: auto;
     padding: 0 20px;
 }
-/* .prev{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: auto;
-    margin-top: -10px;
-    color: var(--primary-color);
-    font-weight: bold;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-}
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: auto;
-    margin-top: -10px;
-    margin-right: 20px;
-    color: var(--primary-color);
-    font-weight: bold;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-} */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -393,7 +299,7 @@ hr{
     font-family: 'Raleway', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
-    text-align: justify;
+    text-align: center;
     color: var(--text-color);
     margin: 30px 0;
 }
@@ -416,17 +322,23 @@ hr{
     height: 40px;
     border-radius: 10px;
     background-color: var(--primary-color);
-    margin-top: 25px;
+    margin-top: 10px;
+}
+#key{
+    display: flex;
+    flex: 1;
 }
 .button-offer span{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
+    text-align: center;
     color: var(--third-color);
-    width: 70%;
+    flex: 0.5;
+    /* width: 70%; */
 }
 .button-offer button{
     display: flex;
@@ -435,10 +347,12 @@ hr{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     font-weight: 500;
+    text-align: center;
     color: var(--third-color);
     cursor: pointer;
     height: 100%;
-    width: 45%;
+    flex: 0.5;
+    /* width: 45%; */
     border-radius: 0 10px 10px 0;
     border: none;
     background-color: var(--background--color-footer);
@@ -600,7 +514,7 @@ hr{
     align-items: center;
     text-decoration: none;
     border-radius: 10px;
-    margin: 40px 0;
+    margin: 20px 0;
     width: 400px;
     height: 35px;
     background-color: var(--primary-color);
@@ -634,7 +548,7 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 .coopyright h2{
     text-align: center;
@@ -659,20 +573,12 @@ hr{
 /* Rodapé */
 
 /* >>>>>>> Responsividade <<<<<<<< */
-@media screen and (max-width:1024px) {
-    .card-culto {
-        margin: 0 10px;
-        height: 320px;
-    }
-}
+
 @media screen and (max-width:833px) {
     .row-title{
         top: 50%;
         left: 50%;
         width: 560px;
-    }
-    .card-culto {
-        height: 280px;
     }
     .offer-title h2{
         font-size: 1.5rem;
@@ -744,50 +650,15 @@ hr{
         font-size: 1.4rem;
         line-height: 2;
     }
-    .row-card-culto{
-        flex-wrap: wrap;
-    }
-    .right-rectangle{
-        display: none;
-    }
-     /* .row-title{
-        top: 40%;
-        left: 53%;
-    } */
-
-    /* .left-rectangle{
-        height: 1000px;
-        width: 100%;
-    } */
-    .card-culto{
-        width: 90%;
-        margin: 10px 0;
-    }
     .offer-title{
         flex-direction: column;
     }
-
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-     .left-rectangle{
-        height: 500px;
-        width: 100%;
-    }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 }
 @media screen and (max-width:650px){
-    /* .row-title{
-        text-align: center;
-        top: 40%;
-        left: 51%;
-        width: 420px;
-    } */
-    
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title{
         text-align: center;
         width: 420px;
     }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title i{
         font-size: 1.5;
     }
@@ -814,22 +685,14 @@ hr{
     .row-footer{
         flex-direction: column;
     }
-
     .icon-footer{
         margin: 10px 0;
     }
 }
 @media screen and (max-width:500px){
-    /* .row-title{
-        left: 40%;
-        width: 310px;
-    } */
-
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title{
         width: 310px;
     }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
     .row-title i{
         font-size: 1.3rem;
     }
@@ -847,98 +710,47 @@ hr{
     }
 }
 @media screen and (max-width:450px){
-    /* .row-title{
-        left: 50%;
-        top: 33%;
-        width: 305px;
-    } */
-    /* .left-rectangle{
-        height: 500px;
-        width: 100%;
-    } */
-    .card-culto{
-        height: 200px;
-        width: 80%;
-    }
+    .row-title{
+       width: 305px;
+   }
     .cool-card{
         width: 350px;
     }
-
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-     .left-rectangle{
-        height: 250px;
-        width: 100%;
-    }
-     .row-title{
-        width: 305px;
-    }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-
 }
 @media screen and (max-width:414px){
-    /* .row-title{
-        left: 50%;
-        top: 33%;
-        width: 305px;
-    } */
-    /* .left-rectangle{
-        height: 500px;
-        width: 100%;
-    } */
-
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-     .left-rectangle{
-        height: 80px;
-        width: 100%;
-    }
      .row-title{
         width: 350px;
     }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-
+}
+@media screen and (max-width:405px){
+     .row-title{
+        width: 350px;
+    }
+    .close{
+        margin: 10px 3px 0 0;
+    }
+    .button-offer{
+        width: 280px;
+    }
+    .button-offer span{
+        font-size: 0.9rem;
+    }
+    .button-offer button{
+        font-size: 0.8rem;
+    }
+    #button-send-folder a {
+        width: 280px;
+    }
 }
 @media screen and (max-width:390px){
-    /* .left-rectangle{
-        height: 170px;
-        width: 100%;
-    } */
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-    .left-rectangle{
-        height: 80px;
-        width: 100%;
-    }
      .row-title{
         width: 320px;
     }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-
-}
-@media screen and (max-width:375px){
-    /* .left-rectangle{
-        height: 170px;
-        width: 100%;
-    } */
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-     .left-rectangle{
-        height: 170px;
-        width: 100%;
-    }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 }
 @media screen and (max-width:320px){
-    /* .left-rectangle{
-        height: 170px;
-        width: 100%;
-    } */
-
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
-     .left-rectangle{
-        height: 300px;
-    }
     .row-title{
         width: 305px;
     }
-    /* AJUSTES DE TESTE PARA OS CARDSSO APAGAR DEPOIS */
 
 }
 
