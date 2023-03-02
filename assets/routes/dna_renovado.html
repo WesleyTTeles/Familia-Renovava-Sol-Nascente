@@ -83,22 +83,22 @@
                 <span>Preencha seus Dados Corretamente</span>
             </div>
             <div class="forms">
-                <form action="" method="post">
+                <form action="/assets/php/processa.php" method="post">
                     <input type="text" name="nome" placeholder="Nome Completo" required>
                     <input type="number" name="fone" placeholder="Telefone" required>
                     <input type="email" name="email" placeholder="E-mail">
                     <input type="datetime" name="data_nascimento" placeholder="Data de Nascimento" required>
-                    <select name="estadocivil" id="estadocivil">
+                    <select name="estado_civil" id="estadocivil">
                         <option value="0">Estado Civil</option>
-                        <option value="1">Solteiro(a)</option>
-                        <option value="2">Casado(a)</option>
-                        <option value="3">Viuvo(a)</option>
-                        <option value="4">Divorciado(a)</option>
+                        <option value="Solteiro(a)">Solteiro(a)</option>
+                        <option value="Casado(a)">Casado(a)</option>
+                        <option value="Viuvo(a)">Viuvo(a)</option>
+                        <option value="Divorciado(a)">Divorciado(a)</option>
                     </select>
-                    <select name="turma" id="turma">
+                    <select name="situacao" id="situacao">
                         <option value="0">Situação</option>
-                        <option value="1">Já sou batizado(a)</option>
-                        <option value="2">Me batizei na Família Renovada Sol Nascente</option>
+                        <option value="batizado">Já sou batizado(a)</option>
+                        <option value="batizado na familia">Me batizei na Família Renovada Sol Nascente</option>
                     </select>
                     <input id="button-signin" type="button" value="Inscrever">
                 </form>
