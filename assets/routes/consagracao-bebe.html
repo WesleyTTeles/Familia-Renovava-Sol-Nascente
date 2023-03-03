@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/327102260c.js" crossorigin="anonymous"></script>
     <meta name="description" content="Uma Família para Ser e Pertencer">
-    <title>DNA Renovado - Familia Renovada Sol Nascente</title>
+    <title>Inscrição - Familia Renovada Sol Nascente</title>
 </head>
 <body>
     <!-- Conteudo inicial -->
@@ -33,8 +33,8 @@
                                 <li><a href="/index.html" onclick="closeMenu()">Inicio</a></li>
                                 <li><a href="/assets/routes/eventos.html" onclick="closeMenu()">Eventos</a></li>
                                 <li><a href="/assets/routes/cursos.html" onclick="closeMenu()">Cursos</a></li>
-                                <li><a href="/assets/routes/renocrianca.html" onclick="closeMenu()">Reno Criança</a></li>
-                                <li><a href="/assets/routes/familiaemacao.html" onclick="closeMenu()">Família em Ação</a></li>
+                                <li><a href="/assets/routes/reno-crianca.html" onclick="closeMenu()">Reno Criança</a></li>
+                                <li><a href="/assets/routes/familia-acao.html" onclick="closeMenu()">Família em Ação</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -47,17 +47,17 @@
     <div class="row-signin-events">
         <div class="cool-events-left">
             <div class="signin-events-img">
-                <img src="/assets/images/course-2.svg" width="600px" height="auto" alt="Imagem do Evento">
+                <img src="/assets/images/course-3.svg" width="600px" height="auto" alt="Imagem do Evento">
             </div>
             <div class="signin-course-info">
-                <h1>DNA Renovado</h1>
-                <h2>Para Batizados</h2>
+                <h1>Consagração de Bebês</h1>
+                <h2>Livre</h2>
                 <div class="row-detail-course">
                     <div class="card-course">
                         <div class="details-course">
                             <i class="fa-solid fa-calendar-check fa-2xl"></i>
                             <div class="subtitle-course">
-                                <span>8 Encontros</span>
+                                <span>2 Encontros</span>
                             </div>
                         </div>
                     </div>
@@ -65,15 +65,15 @@
                         <div class="details-course">
                             <i class="fa-solid fa-clock fa-2xl"></i>
                             <div class="subtitle-course">
-                                <span>8 Horas</span>
+                                <span>2 Horas</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <p>
-                    Aqui aprendemos a viver de acordo com a cultura do Reino e da Família Renovada, descobrindo como nossos dons poderão ser úteis no corpo de Cristo e assim conhecendo mais intimamente aquele que nos chamou. 
+                    Curso preparatório para consagração de bebês. Ficamos felizes em participar com vocês deste momento tão especial. Somos uma família que cuida de cada faixa etária, demonstrando todo amor de Jesus pelos pequeninos aos mais maduros. 
                     <br>
-                    Esse é um curso para pessoas já batizadas em igreja evangélica.
+                    Papai e mamãe, nesse curso vocês terão a oportunidade de desenvolverem a forma bíblica de instrução e criação dos filhos.
                 </p>
             </div>
         </div>
@@ -83,24 +83,35 @@
                 <span>Preencha seus Dados Corretamente</span>
             </div>
             <div class="forms">
-                <form action="/assets/php/processa.php" method="post">
-                    <input type="text" name="nome" placeholder="Nome Completo" required>
-                    <input type="number" name="fone" placeholder="Telefone" required>
-                    <input type="email" name="email" placeholder="E-mail">
-                    <input type="datetime" name="data_nascimento" placeholder="Data de Nascimento" required>
-                    <select name="estado_civil" id="estadocivil">
-                        <option value="0">Estado Civil</option>
-                        <option value="Solteiro(a)">Solteiro(a)</option>
-                        <option value="Casado(a)">Casado(a)</option>
-                        <option value="Viuvo(a)">Viuvo(a)</option>
-                        <option value="Divorciado(a)">Divorciado(a)</option>
+                <form action="/assets/php/processa-cb.php" method="post">
+                    <input type="text" name="nome_do_pai" placeholder="Nome Completo do Papai" required>
+                    <input type="number" name="fone_do_pai" placeholder="Telefone" required>
+                    <input type="email" name="email_do_pai" placeholder="E-mail">
+                    <input type="datetime" name="data_nascimento_do_pai" placeholder="Data de Nascimento" required>
+                    <input type="text" name="nome_da_mae" placeholder="Nome Completo da Mamãe" required>
+                    <input type="number" name="fone_da_mae" placeholder="Telefone" required>
+                    <input type="email" name="email_da_mae" placeholder="E-mail">
+                    <input type="datetime" name="data_nascimento_da_mae" placeholder="Data de Nascimento" required>
+                    <select name="status_pai_igreja">
+                        <option value="0">Na Família Renovada (Papai)</option>
+                        <option value="Já sou membro">Já sou membro</option>
+                        <option value="Serei recebido como membro">Serei recebido como membro</option>
+                        <option value="Apenas frequento">Apenas frequento</option>
                     </select>
-                    <select name="situacao" id="situacao">
-                        <option value="0">Situação</option>
-                        <option value="batizado">Já sou batizado(a)</option>
-                        <option value="batizado na familia">Me batizei na Família Renovada Sol Nascente</option>
+                    <select name="status_mae_igreja">
+                        <option value="0">Na Família Renovada (Mamãe)</option>
+                        <option value="Já sou membro">Já sou membro</option>
+                        <option value="Serei recebido como membro">Serei recebido como membro</option>
+                        <option value="Apenas frequento">Apenas frequento</option>
                     </select>
-                    <input id="button-signin" type="button" value="Inscrever">
+                    <input type="text" name="nome_do_bebe" placeholder="Nome Completo da Criança" required>
+                    <input type="text" name="idade_do_bebe" placeholder="Idade da Criança" required>
+                    <select name="sexo_do_bebe">
+                        <option value="0">Sexo do Bebê</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Faminino">Feminino</option>
+                    </select>
+                    <button id="button-signin">Inscrever</button>
                 </form>
             </div>
         </div>

@@ -221,13 +221,20 @@ li a:hover{
     background-color: var(--background--color-input);
     color: var(--text-color);
 }
+/* button #button-signin{
+    bo
+} */
 #button-signin{
+    border: none;
+    border-radius: 10px;
     width: 200px;
+    height: 30px;
     background-color: var(--primary-color);
     color: var(--third-color);
     font-size: 1.1rem;
     cursor: pointer;
     padding: 0;
+    margin-top: 10px;
 }
 #button-signin:hover{
     background-color: var(--third-color);

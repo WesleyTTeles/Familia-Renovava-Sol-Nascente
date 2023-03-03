@@ -3,16 +3,16 @@
 require_once 'PHPMailer/src/PHPMailer.php';
 require_once 'PHPMailer/src/SMTP.php';
 require_once 'PHPMailer/src/Exception.php';
-require_once 'config.php';
+require_once 'config-cursos.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-function send($nome, $fone, $email){
+function send($nome, $fone, $email, $datanascimento, $estadocivil){
 
-    $query = "insert into alunos_dna (nome, fone, email, data_nascimento, estado_civil, situacao) 
-                values ('{$nome}', '{$fone}', '{$email}', '{$data_nascimento}', '{$estado_civil}', '{$situacao}')";
+    $query = "insert into alunos_primeiros_passos (nome, fone, email, datanascimento, estadocivil) 
+                values ('{$nome}', '{$fone}', '{$email}', '{$datanascimento}', '{$estadocivil}')";
     
     $conexao = mysqli_connect('50.6.138.76', 'fam95562_user_cursos', 'yb^lIX^eLPXE', 'fam95562_cursos');
     mysqli_query($conexao, $query);
@@ -36,14 +36,13 @@ function send($nome, $fone, $email){
         $mail->addReplyTo(EMAIL_DESTINO);
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
-        $mail->Subject .= 'Nova Inscrição para o Curso de DNA - ' .$nome."";
+        $mail->Subject .= 'Nova Inscrição para o Curso de Primeiros Passos - ' .$nome."";
         $mail->Body   .= "Dados Obtidos" ."<br>";
         $mail->Body   .= "Nome: "    .$nome."<br/>";
         $mail->Body   .= "Fone: "    .$fone."<br/>";
         $mail->Body   .= "Email: "    .$email."<br/>";
-        $mail->Body   .= "Data de Nascimento: "    .$data_nascimento."<br/>";
-        $mail->Body   .= "Estado Civil: "    .$estado_civil."<br/>";
-        $mail->Body   .= "Situação: "    .$situacao."<br/>";
+        $mail->Body   .= "Data de Nascimento: "    .$datanascimento."<br/>";
+        $mail->Body   .= "Estado Civil: "    .$estadocivil."<br/>";
         $mail->send();
         return true;
     } catch (Exception $e) {

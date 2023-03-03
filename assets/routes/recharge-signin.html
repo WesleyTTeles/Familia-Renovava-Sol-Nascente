@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/327102260c.js" crossorigin="anonymous"></script>
     <meta name="description" content="Uma Família para Ser e Pertencer">
-    <title>Familia Renovada Sol Nascente</title>
+    <title>Inscrição - Familia Renovada Sol Nascente</title>
 </head>
 <body>
     <!-- Conteudo inicial -->
@@ -31,10 +31,10 @@
                         <nav>
                             <ul>
                                 <li><a href="/index.html" onclick="closeMenu()">Inicio</a></li>
-                                <li><a href="/assets/routes/eventos.html" onclick="closeMenu()">Eventos</a></li>
+                                <l<li><a href="/assets/routes/eventos.html" onclick="closeMenu()">Eventos</a></li>
                                 <li><a href="/assets/routes/cursos.html" onclick="closeMenu()">Cursos</a></li>
-                                <li><a href="/assets/routes/renocrianca.html" onclick="closeMenu()">Reno Criança</a></li>
-                                <li><a href="/assets/routes/familiaemacao.html" onclick="closeMenu()">Família em Ação</a></li>
+                                <li><a href="/assets/routes/reno-crianca.html" onclick="closeMenu()">Reno Criança</a></li>
+                                <li><a href="/assets/routes/familia-acao.html" onclick="closeMenu()">Família em Ação</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -43,16 +43,17 @@
         </div>
     </main>
     <!-- Conteudo inicial -->
+
     <div class="row-signin-events">
         <div class="cool-events-left">
             <div class="signin-events-img">
-                <img src="/assets/images/cafegestao.svg" width="600px" height="auto" alt="Imagem do Evento">
+                <img src="/assets/images/recharge.svg" width="600px" height="auto" alt="Imagem do Evento">
             </div>
             <div class="signin-course-info">
-                <h1>Entre Nos Mulheres</h1>
-                <h2>15 Agosto 2023 às 15h</h2>
+                <h1>Conferência Recharge</h1>
+                <h2>18 de Março de 2023 às 16h</h2>
                 <p>
-                    Nesse encontro, buscamos trazer conhecimento de gestão, contribuindo para a capacitação dos empresários e ajudá-los a avançar cada vez mais em seus negócios. Temos a missão de criar um ambiente de conexão e relacionamento, para que os empresários possam compartilhar suas dores e dificuldades, e serem fortalecidos com as experiência trocadas uns com os outros.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa accusantium magni, iure voluptatum quidem cum esse mollitia, rem consequuntur nulla praesentium dolore, dicta omnis sit sapiente. Nesciunt rem autem voluptatem!
                 </p>
             </div>
         </div>
@@ -66,8 +67,17 @@
                     <input type="text" name="nome" placeholder="Nome Completo" required>
                     <input type="number" name="fone" placeholder="Telefone" required>
                     <input type="email" name="email" placeholder="E-mail">
-                    <input type="text" name="nome" placeholder="Qual nome da Empresa" required>
-                    <input type="text" name="nome" placeholder="Ramo de Atuação" required>
+                    <select name="estadocivil" id="estadocivil">
+                        <option value="0">Situação na Família Renovada Sol Nascente:</option>
+                        <option value="1">Sou membro</option>
+                        <option value="2">Apenas frequento</option>
+                    </select>
+                    <select name="situacao" id="situacao">
+                        <option value="0">Serve em ministério?</option>
+                        <option value="1">Sim</option>
+                        <option value="2">Nao</option>
+                    </select>
+                    <input type="text" name="ministerio" placeholder="Se sim, Qual ministério?" required>
                     <input id="button-signin" type="button" value="Participar">
                 </form>
             </div>
