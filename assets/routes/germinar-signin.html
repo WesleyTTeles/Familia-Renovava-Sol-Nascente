@@ -63,22 +63,23 @@
                 <span>Preencha seus Dados Corretamente</span>
             </div>
             <div class="forms">
-                <form action="" method="post">
+                <form action="/assets/php/processa-germinar.php" method="post">
                     <input type="text" name="nome" placeholder="Nome Completo" required>
                     <input type="number" name="fone" placeholder="Telefone" required>
                     <input type="email" name="email" placeholder="E-mail">
-                    <select name="situacao" id="situacao">
-                        <option value="0">Situação na Família Renovada Sol Nascente:</option>
-                        <option value="1">Sou membro</option>
-                        <option value="2">Apenas frequento</option>
+                    <input type="datetime" name="data_nascimento" placeholder="Data de Nascimento" required>
+                    <select name="situacao">
+                        <option value="0">Situação:</option>
+                        <option value="Sou membro">Sou membro</option>
+                        <option value="Apenas frequento">Apenas frequento</option>
                     </select>
-                    <select name="atuacao" id="atuacao">
+                    <select name="atuacao" id="select">
                         <option value="0">Serve em ministério?</option>
-                        <option value="1">Sim</option>
-                        <option value="2">Nao</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Nao">Nao</option>
                     </select>
-                    <input type="text" name="ministerio" placeholder="Se sim, Qual ministério?" required>
-                    <input id="button-signin" type="button" value="Participar">
+                    <input id="input-ministerio" type="text" name="ministerio" placeholder="Se sim, Qual ministério?" required>
+                    <button id="button-signin">Participar</button>
                 </form>
             </div>
         </div>

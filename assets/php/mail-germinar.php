@@ -3,18 +3,18 @@
 require_once 'PHPMailer/src/PHPMailer.php';
 require_once 'PHPMailer/src/SMTP.php';
 require_once 'PHPMailer/src/Exception.php';
-require_once 'config-cursos.php';
+require_once 'config-germinar.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
-function send($nome, $fone, $email, $datanascimento, $estadocivil){
+function send($nome, $fone, $email, $data_nascimento, $situacao, $atuacao, $ministerio){
 
-    $query = "insert into alunos_primeiros_passos (nome, fone, email, datanascimento, estadocivil) 
-                values ('{$nome}', '{$fone}', '{$email}', '{$datanascimento}', '{$estadocivil}')";
+    $query = "insert into inscricoes_projeto_germinar (nome, fone, email, data_nascimento, situacao, atuacao, ministerio) 
+                values ('{$nome}', '{$fone}', '{$email}', '{$data_nascimento}', '{$situacao}', '{$atuacao}', '{$ministerio}')";
     
-    $conexao = mysqli_connect('50.6.138.76', 'fam95562_user_cursos', 'yb^lIX^eLPXE', 'fam95562_cursos');
+    $conexao = mysqli_connect('50.6.138.76', 'fam95562_user_db', '99j^e2*LkLDp', 'fam95562_projeto_germinar');
     mysqli_query($conexao, $query);
     mysqli_close($conexao);
 
@@ -36,13 +36,15 @@ function send($nome, $fone, $email, $datanascimento, $estadocivil){
         $mail->addReplyTo(EMAIL_DESTINO);
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
-        $mail->Subject .= 'Nova Inscrição para o Curso de Primeiros Passos - ' .$nome."";
+        $mail->Subject .= 'Nova Inscrição para o Projeto Germinar - ' .$nome."";
         $mail->Body   .= "Dados Obtidos" ."<br>";
         $mail->Body   .= "Nome: "    .$nome."<br/>";
         $mail->Body   .= "Fone: "    .$fone."<br/>";
         $mail->Body   .= "Email: "    .$email."<br/>";
-        $mail->Body   .= "Data de Nascimento: "    .$datanascimento."<br/>";
-        $mail->Body   .= "Estado Civil: "    .$estadocivil."<br/>";
+        $mail->Body   .= "Data de Nascimento: "    .$data_nascimento."<br/>";
+        $mail->Body   .= "Situação: "    .$situacao."<br/>";
+        $mail->Body   .= "Serve em Ministério?: "    .$atuacao."<br/>";
+        $mail->Body   .= "Se sim, Qual ministério?: "    .$ministerio."<br/>";
         $mail->send();
         return true;
     } catch (Exception $e) {

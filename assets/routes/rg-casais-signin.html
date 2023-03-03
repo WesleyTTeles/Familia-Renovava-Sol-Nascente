@@ -47,33 +47,13 @@
     <div class="row-signin-events">
         <div class="cool-events-left">
             <div class="signin-events-img">
-                <img src="/assets/images/course-3.svg" width="600px" height="auto" alt="Imagem do Evento">
+                <img src="/assets/images/rg-casais.svg" width="600px" height="auto" alt="Imagem do Evento">
             </div>
             <div class="signin-course-info">
-                <h1>Consagração de Bebês</h1>
-                <h2>Livre</h2>
-                <div class="row-detail-course">
-                    <div class="card-course">
-                        <div class="details-course">
-                            <i class="fa-solid fa-calendar-check fa-2xl"></i>
-                            <div class="subtitle-course">
-                                <span>2 Encontros</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-course">
-                        <div class="details-course">
-                            <i class="fa-solid fa-clock fa-2xl"></i>
-                            <div class="subtitle-course">
-                                <span>2 Horas</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1>Reno Grupo de Casais</h1>
+                <h2>10 de Março de 2023 às 20h</h2>
                 <p>
-                    Curso preparatório para consagração de bebês. Ficamos felizes em participar com vocês deste momento tão especial. Somos uma família que cuida de cada faixa etária, demonstrando todo amor de Jesus pelos pequeninos aos mais maduros. 
-                    <br>
-                    Papai e mamãe, nesse curso vocês terão a oportunidade de desenvolverem a forma bíblica de instrução e criação dos filhos.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa accusantium magni, iure voluptatum quidem cum esse mollitia, rem consequuntur nulla praesentium dolore, dicta omnis sit sapiente. Nesciunt rem autem voluptatem!
                 </p>
             </div>
         </div>
@@ -83,35 +63,28 @@
                 <span>Preencha seus Dados Corretamente</span>
             </div>
             <div class="forms">
-                <form action="/assets/php/processa-cb.php" method="post">
-                    <input type="text" name="nome_do_pai" placeholder="Nome Completo do Papai" required>
-                    <input type="number" name="fone_do_pai" placeholder="Telefone" required>
-                    <input type="email" name="email_do_pai" placeholder="E-mail">
-                    <input type="datetime" name="data_nascimento_do_pai" placeholder="Data de Nascimento" required>
-                    <select name="status_pai_igreja">
-                        <option value="0">Na Família Renovada (Papai)</option>
-                        <option value="Já sou membro">Já sou membro</option>
-                        <option value="Serei recebido como membro">Serei recebido como membro</option>
+                <form action="/assets/php/processa-rg.php" method="post">
+                    <input type="text" name="nome" placeholder="Nome Completo:" required>
+                    <input type="number" name="fone" placeholder="Telefone:" required>
+                    <input type="email" name="email" placeholder="E-mail:" required>
+                    <input type="datetime" name="data_nascimento" placeholder="Data de Nascimento:" required>
+                    <select name="situacao">
+                        <option value="0">Situação:</option>
+                        <option value="Sou membro">Sou membro</option>
                         <option value="Apenas frequento">Apenas frequento</option>
+                        <option value="Primeira Vez Aqui">Primeira Vez Aqui</option>
                     </select>
-                    <input type="text" name="nome_da_mae" placeholder="Nome Completo da Mamãe" required>
-                    <input type="number" name="fone_da_mae" placeholder="Telefone" required>
-                    <input type="email" name="email_da_mae" placeholder="E-mail">
-                    <input type="datetime" name="data_nascimento_da_mae" placeholder="Data de Nascimento" required>
-                    <select name="status_mae_igreja">
-                        <option value="0">Na Família Renovada (Mamãe)</option>
-                        <option value="Já sou membro">Já sou membro</option>
-                        <option value="Serei recebido como membro">Serei recebido como membro</option>
+                    <input type="text" name="nome_conjuge" placeholder="Nome Completo do(a) Cônjuge:" required>
+                    <input type="number" name="fone_conjuge" placeholder="Telefone do(a) Cônjuge" required>
+                    <input type="email" name="email_conjuge" placeholder="E-mail do(a) Cônjuge">
+                    <input type="datetime" name="data_nascimento_conjuge" placeholder="Data de Nascimento do(a) Cônjuge" required>
+                    <select name="situacao">
+                        <option value="0">Situação do(a) Cônjuge:</option>
+                        <option value="Sou membro">Sou membro</option>
                         <option value="Apenas frequento">Apenas frequento</option>
+                        <option value="Primeira Vez Aqui">Primeira Vez Aqui</option>
                     </select>
-                    <input type="text" name="nome_do_bebe" placeholder="Nome Completo da Criança" required>
-                    <input type="text" name="idade_do_bebe" placeholder="Idade da Criança" required>
-                    <select name="sexo_do_bebe">
-                        <option value="0">Sexo da Criança</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Faminino">Feminino</option>
-                    </select>
-                    <button id="button-signin">Inscrever</button>
+                    <button id="button-signin">Participar</button>
                 </form>
             </div>
         </div>

@@ -111,3 +111,16 @@ if(buttonCopy){
   });
 
 }
+
+// Pegando o campo de ministerio
+
+const selectOption = document.querySelector('#select');
+const inputMinisterio = document.querySelector('#input-ministerio');
+
+selectOption.addEventListener('change', () =>{
+  if(selectOption.value == 'Sim'){
+    inputMinisterio.style.display = 'flex';
+  } else {
+    inputMinisterio.style.display = 'none';
+  }
+});

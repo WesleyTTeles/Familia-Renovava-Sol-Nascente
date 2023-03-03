@@ -212,23 +212,23 @@ li a:hover{
     color: var(--text-color);
 }
 .forms select{
-    font-size: 0.9rem;
-    margin: 10px 0;
-    padding: 0 20px;
     height: 40px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    text-indent: 13px;
     border: none;
     border-radius: 10px;
     background-color: var(--background--color-input);
     color: var(--text-color);
 }
-/* button #button-signin{
-    bo
-} */
+#input-ministerio{
+    display: none;
+}
 #button-signin{
-    border: none;
-    border-radius: 10px;
     width: 200px;
     height: 30px;
+    border: none;
+    border-radius: 10px;
     background-color: var(--primary-color);
     color: var(--third-color);
     font-size: 1.1rem;
