@@ -15,7 +15,6 @@ function closeMenu() {
 };
 
 //Funcao para fazer o efeito digitando
-
 const message = "Família Renovada Sol Nascente";
 const text = document.getElementById("text");
 
@@ -32,7 +31,6 @@ if (text) {
 }
 
 // Funcao para o slidershow
-
 var slideIndex = 1;
 const slides = document.getElementsByClassName("events-card");
 const dots = document.getElementsByClassName("dot");
@@ -109,18 +107,20 @@ if(buttonCopy){
       warning.innerText = 'Chave Copiada com Sucesso!';
     });
   });
-
 }
 
-// Pegando o campo de ministerio
 
+// Funcao para mostrar o campo de qual ministerio a pessoa serve se caso ela selecionar sim
 const selectOption = document.querySelector('#select');
 const inputMinisterio = document.querySelector('#input-ministerio');
 
-selectOption.addEventListener('change', () =>{
-  if(selectOption.value == 'Sim'){
-    inputMinisterio.style.display = 'flex';
-  } else {
-    inputMinisterio.style.display = 'none';
-  }
-});
+if(selectOption && inputMinisterio){
+  selectOption.addEventListener('change', () =>{
+    if(selectOption.value == 'Sim'){
+      inputMinisterio.style.display = 'flex';
+    } else {
+      inputMinisterio.style.display = 'none';
+    }
+  });
+}
+

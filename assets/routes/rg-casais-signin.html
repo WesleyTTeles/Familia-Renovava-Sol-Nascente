@@ -70,7 +70,7 @@
                     <input type="number" name="fone" placeholder="Telefone:" required>
                     <input type="email" name="email" placeholder="E-mail:" required>
                     <input type="datetime" name="data_nascimento" placeholder="Data de Nascimento:" required>
-                    <select name="situacao">
+                    <select name="situacao" required>
                         <option value="0">Situação:</option>
                         <option value="Sou membro">Sou membro</option>
                         <option value="Apenas frequento">Apenas frequento</option>
@@ -78,21 +78,21 @@
                     </select>
                     <input type="text" name="nome_conjuge" placeholder="Nome Completo do(a) Cônjuge:" required>
                     <input type="number" name="fone_conjuge" placeholder="Telefone do(a) Cônjuge" required>
-                    <input type="email" name="email_conjuge" placeholder="E-mail do(a) Cônjuge">
+                    <input type="email" name="email_conjuge" placeholder="E-mail do(a) Cônjuge" required>
                     <input type="datetime" name="data_nascimento_conjuge" placeholder="Data de Nascimento do(a) Cônjuge" required>
-                    <select name="situacao">
+                    <select name="situacao_conjuge" required>
                         <option value="0">Situação do(a) Cônjuge:</option>
                         <option value="Sou membro">Sou membro</option>
                         <option value="Apenas frequento">Apenas frequento</option>
                         <option value="Primeira Vez Aqui">Primeira Vez Aqui</option>
                     </select>
-                    <select name="grupo">
-                        <option value="0">Grupo com:</option>
-                        <option value="Sem filhos">Sem Filhos</option>
-                        <option value="Criança pequenos">Criança Pequena</option>
-                        <option value="Criança pequenos e adolescentes">Criança Pequena e Adolescente</option>
-                        <option value="Adolescentes e jovens">Adolescente e Joven</option>
-                        <option value="Casados e somos avós">Casados e Somos Avós</option>
+                    <select name="reno_grupo" required>
+                        <option value="0">RenoGrupo:</option>
+                        <option value="Sem Filhos">Sem Filhos</option>
+                        <option value="Até 5 anos">Até 5 anos</option>
+                        <option value="De 6 a 12 anos">De 6 a 12 anos</option>
+                        <option value="Adolescentes">Adolescentes</option>
+                        <option value="Jovens">Jovens</option>
                     </select>
                     <button id="button-signin">Participar</button>
                 </form>

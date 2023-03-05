@@ -13,6 +13,75 @@
     margin: 0;
     padding: 0;
 }
+
+/* PAGINA DE OBRIGADO */
+.signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--background-color);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.title h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+.title h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.title span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+.btn-whats button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0 100px 0;
+}
+.fa-whatsapp{
+    margin-left: 20px;
+}
+.btn-whats button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 100%;
+    height: 40px;
+    background-color: #42BD4F;
+    color: var(--third-color);
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+/* PAGINA DE OBRIGADO */
+
+
 /* Conteudo inicial */
 .conteiner{
     width: 100vw;
