@@ -1,6 +1,6 @@
 <?php
 
-require_once 'mail-eventos.php';
+require_once 'mail-tpl.php';
 
 $nome = $_POST['nome'];
 $fone = $_POST['fone'];
@@ -17,5 +17,5 @@ if(send($nome, $fone, $email, $data_nascimento, $situacao, $atuando, $ministerio
 else{
     echo "E-mail nao enviado";
 }
-
+                            
 ?>
